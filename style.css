@@ -1,0 +1,303 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('Imagenes/logo.png'); /* Imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Header */
+.main-header {
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+}
+
+.main-header nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.main-header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.main-header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Sección del perfil */
+.profile-section {
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro con transparencia */
+    padding: 50px;
+    color: white;
+    text-align: left; /* Cambiado a izquierda */
+}
+
+.profile-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.profile-image img {
+    border-radius: 50%;
+    width: 150px;
+    height: auto;
+}
+
+.profile-info h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.profile-info p {
+    color: #ddd;
+    margin-bottom: 20px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.social-icons a img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Sección de búsqueda */
+.search-section {
+    margin: 30px 0;
+    text-align: center;
+}
+
+.search-bar {
+    display: inline-flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.search-bar input {
+    padding: 10px;
+    border: none;
+    outline: none;
+    width: 200px;
+}
+
+.search-bar button {
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #444;
+}
+
+/* Sección de proyectos */
+.projects-section {
+    padding: 50px;
+    background-color: #f9f9f9;
+    text-align: left; /* Cambiado a izquierda */
+}
+
+.projects-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.accordion-button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 15px;
+    text-align: left;
+    width: 100%;
+    cursor: pointer;
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.accordion-button:hover {
+    background-color: #444;
+}
+
+.accordion-content {
+    display: none;
+    padding: 15px;
+    background-color: #eee;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+/* Footer */
+.main-footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* Estilos para las imágenes de los proyectos */
+.project-image {
+    width: 100%; /* Ajusta el ancho según lo necesites */
+    max-width: 300px; /* Ancho máximo */
+    border-radius: 8px; /* Bordes redondeados */
+    margin: 10px 0; /* Espaciado */
+}
+
+/* Estilo para el botón Continuar */
+.continue-button {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.continue-button:hover {
+    background-color: #444; /* Color al pasar el cursor */
+}
+
+/* Menú de navegación */
+.nav-menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Usar flexbox para un menú horizontal */
+    justify-content: flex-end; /* Alinear el menú a la derecha */
+}
+
+.nav-menu li {
+    position: relative;
+}
+
+.nav-menu li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 16px; /* Tamaño de fuente por defecto */
+}
+
+.nav-menu li a:hover {
+    background-color: #555; /* Color de fondo al pasar el ratón */
+}
+
+.submenu {
+    display: none; /* Ocultar el submenú por defecto */
+    background-color: #444;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    position: absolute; /* Hacer que el submenu aparezca sobre otros elementos */
+    top: 100%; /* Colocarlo debajo del elemento padre */
+}
+
+.nav-menu li:hover .submenu {
+    display: block; /* Mostrar el submenu al pasar el ratón */
+}
+
+.submenu li {
+    width: 150px; /* Ancho de los elementos del submenu */
+}
+
+.submenu li a {
+    padding: 10px;
+    color: white;
+    font-size: 14px; /* Tamaño de fuente más pequeño para el submenú */
+}
+
+.submenu li a:hover {
+    background-color: #666; /* Color de fondo al pasar el ratón en el submenu */
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.week-section {
+    background-color: #fff; /* Fondo blanco para la sección de semanas */
+    padding: 20px; /* Espaciado interior */
+    margin: 20px; /* Espaciado exterior */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.week-box-container {
+    display: flex; /* Usar flexbox para alinear los cuadros horizontalmente */
+    justify-content: center; /* Centrar los cuadros */
+    flex-wrap: wrap; /* Permitir que los cuadros se ajusten a una nueva línea */
+}
+
+.week-box {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 15px; /* Margen alrededor de cada cuadro */
+    width: 300px; /* Ancho de los cuadros */
+    max-width: 100%; /* Evitar que se salga del contenedor en pantallas pequeñas */
+    text-align: center; /* Centrar el texto y los elementos dentro del cuadro */
+}
+
+.week-box img {
+    width: 100%; /* Hacer que la imagen ocupe todo el ancho del cuadro */
+    height: auto; /* Mantener la proporción de la imagen */
+    border-radius: 5px;
+}
+
+.week-box button {
+    margin-top: 10px; /* Espaciado encima del botón */
+    padding: 10px 15px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer; /* Cambiar el cursor al pasar sobre el botón */
+}
+
+.week-box button:hover {
+    background-color: #555; /* Cambiar color al pasar el ratón */
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .nav-menu {
+        flex-direction: column; /* Cambiar a columna en móviles */
+        align-items: center;
+    }
+
+    .nav-menu li a {
+        font-size: 14px; /* Tamaño de fuente más pequeño en móviles */
+    }
+
+    .week-box {
+        width: 100%; /* Cada cuadro ocupa el 100% del ancho en móviles */
+        margin: 10px 0; /* Margen vertical en lugar de horizontal */
+    }
+}
